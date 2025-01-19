@@ -1,6 +1,6 @@
 # DaiList - Goal Tracker
 
-
+![DaiList Screenshot](./Images/Screenshot%20(150).png)
 
 DaiList is a **daily goal tracker** designed to help users stay organized, track their progress, and achieve their goals efficiently.
 Whether you're a writer, developer, or anyone with daily tasks, DaiList provides a simple and intuitive interface to manage your to-dos, monitor progress, and stay productive.
@@ -108,16 +108,18 @@ Here are some ideas for future improvements:
 
 
 *Task Management Interface*
+![Task Management](./Images/Screenshot%20(150).png)
+![Task Management](./Images/Screenshot%20(151).png)
 
 
 *Progress Bar and Percentage*
-
+![Progress Tracking](./Images/Screenshot%20(152).png)
   
 *Calendar for Scheduling Events*
-
+![Calendar](./Images/Screenshot%20(153).png)
 
 *Interactive Mind Map*
-
+![Mind Map](./Images/Screenshot%20(154).png)
 ---
 
 ## 🙏 Feedback
