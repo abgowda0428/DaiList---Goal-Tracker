@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DAILIST</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>DaiList</h1>
+      <h2>Daily Goal Tracker</h2>
+      <p>Track your progress, schedule sessions, and organize your ideas</p>
+    </header>
+
+    <div class="introduction">
+      <h2>About Me</h2>
+      <p>
+        Welcome to my goal tracker! I'm <strong>Abhishek Gowda H C</strong>, a passionate developer and writer who loves organizing thoughts and tracking progress. This tool is a reflection of my dedication to staying focused and productive in my writing journey.
+      </p>
+      <p>
+        In the last hackathon, I created a project called <strong>"My Portfolio Project"</strong>, which was a culmination of my hard work and creativity. Unfortunately, due to time constraints and some confusion, I was unable to submit it. However, you can still check it out here:
+        <a href="https://abgowda0428.github.io/Hackaton-Nexus-Project/Home/index.html" target="_blank" rel="noopener noreferrer">Nexus Project</a>.
+      </p>
+      <p>
+        For this hackathon, I've poured my heart and soul into building this writing goal tracker. It’s designed to help writers like me stay organized, track progress, and achieve their goals. I’ve worked tirelessly to ensure it’s user-friendly, functional, and visually appealing.
+      </p>
+      <p>
+        I would greatly appreciate feedback from <strong>Rohit Negi Sir</strong> on both my previous project and this one. Your insights and guidance mean a lot to me, and I’m eager to learn and improve. Thank you for visiting, and I hope you find this tool as useful as I do!
+      </p>
+    </div>
+
+    <div class="theme-toggle-container">
+      <button id="theme-toggle" class="theme-toggle-button">
+        <i data-lucide="sun"></i>
+      </button>
+    </div>
+
+    <div class="grid">
+      <div class="column">
+        <div class="card" id="goal-tracker">
+          <div class="card-header">
+            <h2><i data-lucide="target"></i> Daily Goal</h2>
+          </div>
+          <div class="card-content">
+            <div class="progress-info">
+              <span>Progress</span>
+              <span id="word-count">0 / 0 tasks</span>
+            </div>
+            <div class="progress-bar">
+              <div class="progress" id="progress-fill"></div>
+            </div>
+            <div id="goal-display" class="text-center">
+              <span class="percentage">0%</span>
+              <p>of daily goal completed</p>
+            </div>
+            <div class="todo-container">
+              <div class="todo-input-container">
+                <input type="text" id="todo-input" placeholder="Add a new task">
+                <button id="add-todo" class="icon-button">
+                  <i data-lucide="plus"></i>
+                </button>
+              </div>
+              <div class="todo-lists">
+                <div class="active-todos">
+                  <h3>Active Tasks</h3>
+                  <ul id="todo-list"></ul>
+                </div>
+                <div class="completed-todos">
+                  <h3>Completed Tasks</h3>
+                  <ul id="completed-list"></ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="calendar">
+          <div class="card-header">
+            <h2><i data-lucide="calendar"></i> Event Schedule</h2>
+            <button id="add-event" class="icon-button">
+              <i data-lucide="plus"></i>
+            </button>
+          </div>
+          <div class="card-content">
+            <form id="event-form" class="hidden">
+              <div class="form-group">
+                <label>Title</label>
+                <input type="text" id="event-title" required>
+              </div>
+              <div class="form-group">
+                <label>Date</label>
+                <input type="date" id="event-date" required>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Start Time</label>
+                  <input type="time" id="event-start" required>
+                </div>
+                <div class="form-group">
+                  <label>End Time</label>
+                  <input type="time" id="event-end" required>
+                </div>
+              </div>
+              <button type="submit" class="button">Add Event</button>
+            </form>
+            <div id="events-list">
+              <p class="empty-state">No events scheduled</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" id="mind-map">
+        <div class="card-header">
+          <h2><i data-lucide="brain-circuit"></i> Mind Map</h2>
+          <button id="add-node" class="icon-button">
+            <i data-lucide="plus"></i>
+          </button>
+        </div>
+        <div class="card-content">
+          <div id="canvas" class="mind-map-canvas"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-section">
+      <div class="social-links">
+        <a href="https://github.com/abgowda0428" class="social-icon"><i data-lucide="github"></i></a>
+        <a href="https://www.linkedin.com/in/abhishek-gowda-h-c-94069028b/" class="social-icon"><i data-lucide="linkedin"></i></a>
+        <a href="https://x.com/abgowda48" class="social-icon"><i data-lucide="twitter"></i></a>
+        <a href="https://www.instagram.com/" class="social-icon"><i data-lucide="instagram"></i></a>
+      </div>
+      <div class="quote-container">
+        <p id="random-quote"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
